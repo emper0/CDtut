@@ -9,6 +9,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-Crashlytics.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Fabric.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-ISO8601DateFormatterValueTransformer.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -42,37 +52,47 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>49819A62CA7346C86738A774</key>
+		<key>0D7A6CA184E5F1F39767E191</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5B1155A04B53CEF5A2B3FDB5</key>
+		<key>20193AF50637F7F19CA4FF70</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7C38F0632CFE116AD0E4B5B1</key>
+		<key>2B2CE64626BE884D8355D150</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C61FE4337EAC1D26A2B558EE</key>
+		<key>61EF7B9E94347DDFDDF2F41D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CFDCF59EB5ACDA1095159181</key>
+		<key>6A35F67CFEA1D7EB5B1E080F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D7C2964178AA0DD5146BB49E</key>
+		<key>6B52D077DFE82F2813B8FC62</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E84CEC0D24A8B5342122D4C8</key>
+		<key>818EE4D833C9828DF59B01D4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A6C1547A67416699784F4F7D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EF9E29A6E23AD78D5A27E4C4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
