@@ -1,21 +1,18 @@
 //
-//  TableViewController.m
+//  myTableViewController.m
 //  CoreDataTutorial
 //
-//  Created by empero on 22/08/15.
+//  Created by empero on 23/08/15.
 //  Copyright (c) 2015 InterSID. All rights reserved.
 //
 
-#import "TableViewController.h"
-#import "AppDelegate.h"
-#import "User.h"
-#import "Type.h"
+#import "myTableViewController.h"
 
-@interface TableViewController ()
+@interface myTableViewController ()
 
 @end
 
-@implementation TableViewController
+@implementation myTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

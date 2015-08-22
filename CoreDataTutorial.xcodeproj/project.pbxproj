@@ -19,6 +19,7 @@
 		B6E56AF11B88EEAD00FDCF6F /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E56AEE1B88EEAD00FDCF6F /* User.m */; };
 		B6E56AF21B88EEAD00FDCF6F /* Type.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E56AF01B88EEAD00FDCF6F /* Type.m */; };
 		B6F92A481B8915C900CFE494 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F92A471B8915C900CFE494 /* TableViewController.m */; };
+		B6F92A4B1B892FD000CFE494 /* myTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F92A4A1B892FD000CFE494 /* myTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		B6E56AF01B88EEAD00FDCF6F /* Type.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Type.m; sourceTree = "<group>"; };
 		B6F92A461B8915C900CFE494 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		B6F92A471B8915C900CFE494 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		B6F92A491B892FD000CFE494 /* myTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myTableViewController.h; sourceTree = "<group>"; };
+		B6F92A4A1B892FD000CFE494 /* myTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = myTableViewController.m; sourceTree = "<group>"; };
 		C4CEC7E361B9C9206E854F00 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E07926A6BE88B5D126031736 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -108,16 +111,18 @@
 			isa = PBXGroup;
 			children = (
 				B6B131911B88C51000E82B74 /* AppDelegate.h */,
+				B6B131921B88C51000E82B74 /* AppDelegate.m */,
 				B6B131941B88C51000E82B74 /* CoreDataTutorial.xcdatamodeld */,
 				B6E56AED1B88EEAD00FDCF6F /* User.h */,
 				B6E56AEE1B88EEAD00FDCF6F /* User.m */,
 				B6E56AEF1B88EEAD00FDCF6F /* Type.h */,
 				B6E56AF01B88EEAD00FDCF6F /* Type.m */,
-				B6B131921B88C51000E82B74 /* AppDelegate.m */,
 				B6B131971B88C51000E82B74 /* ViewController.h */,
 				B6B131981B88C51000E82B74 /* ViewController.m */,
 				B6B1319A1B88C51000E82B74 /* Main.storyboard */,
 				B6F92A461B8915C900CFE494 /* TableViewController.h */,
+				B6F92A491B892FD000CFE494 /* myTableViewController.h */,
+				B6F92A4A1B892FD000CFE494 /* myTableViewController.m */,
 				B6F92A471B8915C900CFE494 /* TableViewController.m */,
 				B6B1319D1B88C51000E82B74 /* Images.xcassets */,
 				B6B1319F1B88C51000E82B74 /* LaunchScreen.xib */,
@@ -317,6 +322,7 @@
 				B6B131991B88C51000E82B74 /* ViewController.m in Sources */,
 				B6F92A481B8915C900CFE494 /* TableViewController.m in Sources */,
 				B6B131961B88C51000E82B74 /* CoreDataTutorial.xcdatamodeld in Sources */,
+				B6F92A4B1B892FD000CFE494 /* myTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

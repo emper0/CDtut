@@ -7,6 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "AppDelegate.h"
+#import "TableViewController.h"
+#import "User.h"
+#import "Type.h"
 
 @interface ViewController ()
 
@@ -58,7 +62,45 @@
     return;
 }
 
-
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if([[segue identifier] isEqualToString:@"ListUsersSegue"]){
+        NSLog(@"Run segue");
+        
+        AppDelegate *appDelegate = [[UIApplication sharedApplication]delegate];
+        _managedObjectContext = [appDelegate managedObjectContext];
+        
+        //insert new objet or entity
+        
+        User *user1 = [NSEntityDescription insertNewObjectForEntityForName:@"User" inManagedObjectContext:_managedObjectContext];
+        
+        //add new object's attribute
+        user1.userName = _textField1.text;
+        
+        Type *type1 = [NSEntityDescription insertNewObjectForEntityForName:@"Type" inManagedObjectContext:_managedObjectContext];
+        type1.typeName = _textField2.text;
+        
+        //create relationship
+        //[type1 addusersoftypeObject:user1];
+        
+        //if it coulndt save
+        NSError *error;
+        
+        if(![_managedObjectContext save:&error]){
+            NSLog(@"coulndt save");
+        }
+        
+        //if save
+        NSLog(@"Save");
+        _textField1.text = NULL;
+        _textField2.text = NULL;
+        
+        [self.view endEditing:YES];
+        
+        
+        
+    
+    }
+}
 
 
 
