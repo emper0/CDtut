@@ -7,7 +7,7 @@
 //
 
 #import "Type.h"
-#import "NSManagedObject.h"
+
 
 
 @implementation Type
