@@ -16,6 +16,8 @@
 		B6B1319E1B88C51000E82B74 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6B1319D1B88C51000E82B74 /* Images.xcassets */; };
 		B6B131A11B88C51000E82B74 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6B1319F1B88C51000E82B74 /* LaunchScreen.xib */; };
 		B6B131AD1B88C51000E82B74 /* CoreDataTutorialTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B131AC1B88C51000E82B74 /* CoreDataTutorialTests.m */; };
+		B6E56AF11B88EEAD00FDCF6F /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E56AEE1B88EEAD00FDCF6F /* User.m */; };
+		B6E56AF21B88EEAD00FDCF6F /* Type.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E56AF01B88EEAD00FDCF6F /* Type.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,10 @@
 		B6B131A61B88C51000E82B74 /* CoreDataTutorialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataTutorialTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6B131AB1B88C51000E82B74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6B131AC1B88C51000E82B74 /* CoreDataTutorialTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataTutorialTests.m; sourceTree = "<group>"; };
+		B6E56AED1B88EEAD00FDCF6F /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		B6E56AEE1B88EEAD00FDCF6F /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		B6E56AEF1B88EEAD00FDCF6F /* Type.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Type.h; sourceTree = "<group>"; };
+		B6E56AF01B88EEAD00FDCF6F /* Type.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Type.m; sourceTree = "<group>"; };
 		C4CEC7E361B9C9206E854F00 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E07926A6BE88B5D126031736 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -99,13 +105,17 @@
 			isa = PBXGroup;
 			children = (
 				B6B131911B88C51000E82B74 /* AppDelegate.h */,
+				B6B131941B88C51000E82B74 /* CoreDataTutorial.xcdatamodeld */,
+				B6E56AED1B88EEAD00FDCF6F /* User.h */,
+				B6E56AEE1B88EEAD00FDCF6F /* User.m */,
+				B6E56AEF1B88EEAD00FDCF6F /* Type.h */,
+				B6E56AF01B88EEAD00FDCF6F /* Type.m */,
 				B6B131921B88C51000E82B74 /* AppDelegate.m */,
 				B6B131971B88C51000E82B74 /* ViewController.h */,
 				B6B131981B88C51000E82B74 /* ViewController.m */,
 				B6B1319A1B88C51000E82B74 /* Main.storyboard */,
 				B6B1319D1B88C51000E82B74 /* Images.xcassets */,
 				B6B1319F1B88C51000E82B74 /* LaunchScreen.xib */,
-				B6B131941B88C51000E82B74 /* CoreDataTutorial.xcdatamodeld */,
 				B6B1318D1B88C51000E82B74 /* Supporting Files */,
 			);
 			path = CoreDataTutorial;
@@ -295,6 +305,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6E56AF11B88EEAD00FDCF6F /* User.m in Sources */,
+				B6E56AF21B88EEAD00FDCF6F /* Type.m in Sources */,
 				B6B131931B88C51000E82B74 /* AppDelegate.m in Sources */,
 				B6B131901B88C51000E82B74 /* main.m in Sources */,
 				B6B131991B88C51000E82B74 /* ViewController.m in Sources */,
