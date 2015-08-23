@@ -69,6 +69,11 @@
         AppDelegate *appDelegate = [[UIApplication sharedApplication]delegate];
         _managedObjectContext = [appDelegate managedObjectContext];
         
+        if([_sameString isEqualToString:@"same"]){
+            [_selectedUser setUserName:_textField1.text];
+            [_selectedUser.typeofuser setTypeName:_textField2.text];
+        }
+        
         //insert new objet or entity
         
         User *user1 = [NSEntityDescription insertNewObjectForEntityForName:@"User" inManagedObjectContext:_managedObjectContext];
@@ -99,6 +104,22 @@
         
     
     }
+}
+
+-(IBAction)unwindFromSegue:(UIStoryboardSegue *)segue{
+    
+    //call AppDelegate fetch request
+    AppDelegate *appDelegate = [[UIApplication sharedApplication]delegate];
+    _managedObjectContext = [appDelegate managedObjectContext];
+    
+    //set myArray with fetched
+    _myArray = [appDelegate getAllUserRecords];
+    
+    _textField1.text = _selectedUser.userName;
+    _textField2.text = _selectedUser.typeofuser.typeName;
+    
+    _sameString = @"same";
+    
 }
 
 

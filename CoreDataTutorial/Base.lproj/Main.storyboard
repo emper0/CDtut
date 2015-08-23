@@ -92,6 +92,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="Y3d-iU-uQg" kind="unwind" identifier="selectUser" unwindAction="unwindFromSegue:" id="8bn-8v-QjG"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -101,6 +104,7 @@
                     </tableView>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QzP-BT-bks" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Y3d-iU-uQg" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2181" y="340"/>
         </scene>

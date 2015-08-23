@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "User.h"
 
 @interface ViewController : UIViewController<UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *textField1;
@@ -15,5 +16,12 @@
 @property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 @property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
 @property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
+
+//part 3
+@property (strong,nonatomic) User *selectedUser;
+@property (strong,nonatomic) NSArray *myArray;
+@property (strong,nonatomic) NSString *sameString;
+
+
 @end
 

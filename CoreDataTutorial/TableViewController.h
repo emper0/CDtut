@@ -7,9 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+
+#import "User.h"
+
+
 @interface TableViewController : UITableViewController
 @property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 @property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
 @property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 @property (strong,nonatomic) NSArray *myArray;
+
+@property (strong,nonatomic) User *selectedUser;
 @end
