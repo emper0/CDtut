@@ -2,7 +2,7 @@
 //  User.m
 //  
 //
-//  Created by empero on 22/08/15.
+//  Created by empero on 23/08/15.
 //
 //
 
@@ -12,8 +12,8 @@
 
 @implementation User
 
-@dynamic userName;
 @dynamic userBirthDate;
+@dynamic userName;
 @dynamic userPhone;
 @dynamic typeofuser;
 

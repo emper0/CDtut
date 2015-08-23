@@ -2,7 +2,7 @@
 //  User.h
 //  
 //
-//  Created by empero on 22/08/15.
+//  Created by empero on 23/08/15.
 //
 //
 
@@ -13,8 +13,8 @@
 
 @interface User : NSManagedObject
 
-@property (nonatomic, retain) NSString * userName;
 @property (nonatomic, retain) NSDate * userBirthDate;
+@property (nonatomic, retain) NSString * userName;
 @property (nonatomic, retain) NSNumber * userPhone;
 @property (nonatomic, retain) Type *typeofuser;
 

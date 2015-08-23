@@ -80,8 +80,7 @@
         type1.typeName = _textField2.text;
         
         //create relationship
-        //[type1 addusersoftypeObject:user1];
-        
+        [type1 addUsersoftypeObject:user1];
         //if it coulndt save
         NSError *error;
         
