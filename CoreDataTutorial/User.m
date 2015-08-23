@@ -7,6 +7,7 @@
 //
 
 #import "User.h"
+#import "Hobby.h"
 #import "Type.h"
 
 
@@ -16,5 +17,6 @@
 @dynamic userName;
 @dynamic userPhone;
 @dynamic typeofuser;
+@dynamic hobbiesOfUser;
 
 @end

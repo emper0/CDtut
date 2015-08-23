@@ -11,6 +11,8 @@
 #import "TableViewController.h"
 #import "User.h"
 #import "Type.h"
+#import "Hobby.h"
+
 
 @interface ViewController ()
 
@@ -22,6 +24,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    _textField1.placeholder = @"User";
+    _textField2.placeholder = @"Type";
+    _textField3.placeholder = @"Hobby";
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -31,6 +37,7 @@
 -(void)textFieldDidBeginEditing:(UITextField *)textField{
     _textField1.placeholder = @"";
     _textField2.placeholder = @"";
+    _textField3.placeholder = @"";
 }
 -(void)textFieldDidEndEditing:(UITextField *)textField{
     
@@ -39,11 +46,16 @@
     _textField1.placeholder = _textField1.text;
     
     
-    if(_textField1.text.length==0){
+    if(_textField2.text.length==0){
         _textField2.text = _textField2.placeholder;
     }
     _textField2.placeholder = _textField2.text;
     
+    
+    if(_textField3.text.length==0){
+        _textField3.text = _textField2.text;
+    }
+    _textField3.placeholder = _textField2.text;
 }
 
 -(BOOL)textFieldShouldReturn:(UITextField *)textField{
@@ -57,6 +69,7 @@
     //if you touch outside of textfield, your editing will stop and keyboard dismiss
     [_textField1 resignFirstResponder];
     [_textField2 resignFirstResponder];
+    [_textField3 resignFirstResponder];
     
     [super touchesBegan:touches withEvent:event];
     return;
@@ -84,8 +97,19 @@
         Type *type1 = [NSEntityDescription insertNewObjectForEntityForName:@"Type" inManagedObjectContext:_managedObjectContext];
         type1.typeName = _textField2.text;
         
+        Hobby *hobby1 = [NSEntityDescription insertNewObjectForEntityForName:@"Hobby" inManagedObjectContext:_managedObjectContext];
+        hobby1.hobbyName = _textField3.text;
+        
+        
         //create relationship
         [type1 addUsersoftypeObject:user1];
+        //[user1 addUserOfHobbyObject:hobby1];
+        
+        [user1 addHobbiesOfUserObject:hobby1];
+        
+        
+        NSLog(@"hobbyment:%@", hobby1.hobbyName);
+        
         //if it coulndt save
         NSError *error;
         
@@ -97,6 +121,7 @@
         NSLog(@"Save");
         _textField1.text = NULL;
         _textField2.text = NULL;
+        _textField3.text = NULL;
         
         [self.view endEditing:YES];
         

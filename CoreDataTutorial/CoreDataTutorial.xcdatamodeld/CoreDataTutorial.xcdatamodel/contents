@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7701" systemVersion="14F27" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Hobby" representedClassName="Hobby" syncable="YES">
+        <attribute name="hobbyName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="userOfHobby" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="hobbiesOfUser" inverseEntity="User" syncable="YES"/>
+    </entity>
     <entity name="Type" representedClassName="Type" syncable="YES">
         <attribute name="typeName" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="usersoftype" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="User" inverseName="typeofuser" inverseEntity="User" syncable="YES"/>
@@ -8,10 +12,12 @@
         <attribute name="userBirthDate" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="userName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="userPhone" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="hobbiesOfUser" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Hobby" inverseName="userOfHobby" inverseEntity="Hobby" syncable="YES"/>
         <relationship name="typeofuser" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Type" inverseName="usersoftype" inverseEntity="Type" syncable="YES"/>
     </entity>
     <elements>
         <element name="Type" positionX="144" positionY="96" width="128" height="73"/>
-        <element name="User" positionX="-63" positionY="-18" width="128" height="105"/>
+        <element name="User" positionX="-63" positionY="-18" width="128" height="118"/>
+        <element name="Hobby" positionX="45" positionY="63" width="128" height="73"/>
     </elements>
 </model>

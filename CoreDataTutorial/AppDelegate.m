@@ -135,8 +135,15 @@
     //Setting entity to be queried
     
     NSEntityDescription *entity = [NSEntityDescription entityForName:@"User" inManagedObjectContext:_managedObjectContext];
-    
     [fetchRequest setEntity:entity];
+    
+    
+    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc]initWithKey:@"userName" ascending:YES];
+    [fetchRequest setSortDescriptors:@[sortDescriptor]];
+    
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"(hobbiesOfUser.@count !=0)"];
+    [fetchRequest setPredicate:predicate];
+    
     
     NSError* error;
     

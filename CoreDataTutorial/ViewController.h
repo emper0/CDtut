@@ -22,6 +22,7 @@
 @property (strong,nonatomic) NSArray *myArray;
 @property (strong,nonatomic) NSString *sameString;
 
-
+//part4
+@property (weak, nonatomic) IBOutlet UITextField *textField3;
 @end
 

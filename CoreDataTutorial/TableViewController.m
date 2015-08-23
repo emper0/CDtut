@@ -14,6 +14,9 @@
 //part 3
 #import "ViewController.h"
 
+//part4
+#import "Hobby.h"
+
 @interface TableViewController ()
 
 @end
@@ -57,10 +60,15 @@
     User *user1 = (User*)[_myArray objectAtIndex:indexPath.row];
     cell.textLabel.text = [NSString stringWithFormat:@"%@",user1.userName];
     
-    //use relationship: call the user1's relationshup"typeofuser
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@",user1.typeofuser.typeName];
-                                
     
+    NSArray *hobbiesArray = [user1.hobbiesOfUser allObjects];
+    Hobby *hobby1 = [hobbiesArray firstObject];
+    NSLog(@"hobbymnem:%@", hobby1.hobbyName);
+    
+    //use relationship: call the user1's relationshup"typeofuser
+    //cell.detailTextLabel.text = [NSString stringWithFormat:@"%@",user1.typeofuser.typeName];
+                                
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@, %@",user1.typeofuser.typeName, hobby1.hobbyName];
     
     return cell;
 }
