@@ -126,4 +126,44 @@
     }
 }
 
+
+-(NSArray *)getAllUserRecords{
+    
+    //initializing NSFetchRequest
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    
+    //Setting entity to be queried
+    
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"User" inManagedObjectContext:_managedObjectContext];
+    
+    [fetchRequest setEntity:entity];
+    
+    NSError* error;
+    
+    //Query on managedObjectContext with generated fetchRequest
+    NSArray *fetchedRecords = [_managedObjectContext executeFetchRequest:fetchRequest error:&error];
+    
+    //Returning Fetched Records
+    return fetchedRecords;
+}
+
 @end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
